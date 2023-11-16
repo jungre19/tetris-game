@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>俄罗斯方块</title>
+  <style>
+      #root {
+          display: flex;
+          justify-content: center;
+      }
+
+      #panel {
+          width: 570px;
+          height: 810px;
+          background: #000;
+          position: relative;
+      }
+
+      #tip{
+          position: relative;
+          background: antiquewhite;
+      }
+
+      #next{
+          position: relative;
+          width: 210px;
+          height: 120px;
+      }
+  </style>
+</head>
+<body>
+<div id="root">
+  <div id="panel"></div>
+  <div id="tip">
+    <div id="next"></div>
+  </div>
+</div>
+<div style="text-align: center;margin-top: 10px;">
+  <button id="btnDown">向下移动</button>
+  <button id="btnLeft">向左移动</button>
+  <button id="btnRight">向右移动</button>
+  <button id="rotateClock">顺时针旋转</button>
+  <button id="switchSquare">切换方块</button>
+</div>
+<div style="text-align: center;margin-top: 10px;">
+  <button id="btnStart">游戏开始</button>
+  <button id="btnPause">游戏暂停</button>
+</div>
+</body>
+</html>
